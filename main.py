@@ -2,7 +2,7 @@ import requests,random,time,json
 from random import *
 
 try:
-    with open ("automessage_config.json", 'r') as f:
+    with open ("config.json", 'r') as f:
         setup = json.load(f)
         token, cooldown, Cid = setup['TOKEN'], setup['COOLDOWN'], setup['CHANNEL_ID']
 except:
